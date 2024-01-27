@@ -9,6 +9,24 @@ const initialState = {
       priority: "High",
       isFavorite: true,
     },
+    {
+      id: crypto.randomUUID(),
+      title: "Learn Web Application",
+      description:
+        "I want to learn Frontend Development with React Accelerator with React and Next.js",
+      tags: ["JavaScript", "Python", "Rust"],
+      priority: "Low",
+      isFavorite: false,
+    },
+    {
+      id: crypto.randomUUID(),
+      title: "Software Engineering",
+      description:
+        "I want to learn Frontend Development with React Accelerator with React and Next.js",
+      tags: ["C", "C++", "Java"],
+      priority: "High",
+      isFavorite: true,
+    },
   ],
 };
 
