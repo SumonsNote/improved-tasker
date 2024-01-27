@@ -64,7 +64,9 @@ export default function AddTaskModal({ onSave, taskToUpdate, onCloseClick }) {
     ) {
       onSave(task, isAdd);
     } else {
-      toast.info("No changes made to the task. Please change something.");
+      if (!isAdd) {
+        toast.info("No changes made to the task. Please change something.");
+      }
     }
   };
 
